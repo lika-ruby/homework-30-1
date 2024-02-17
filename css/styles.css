@@ -99,6 +99,24 @@ body {
   position: absolute;
   bottom: -32px;
   right: 0;
+  animation-name: link-after-movement;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes link-after-movement {
+  0% {
+    transform: translate(0, -5px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, -5px);
+  }
 }
 
 .header-nav-list {
@@ -190,6 +208,21 @@ body {
   text-transform: uppercase;
   max-width: 696px;
   margin-bottom: 40px;
+  animation-name: title-move;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes title-move {
+  0% {
+    transform: translate(400px, -100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 
 .hero-button {
@@ -204,6 +237,21 @@ body {
   background-color: var(--accent-color, #2196f3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  animation-name: btn-move;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes btn-move {
+  0% {
+    transform: translate(-400px, 100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
 }
 
 .hero-button:hover,
@@ -1052,6 +1100,28 @@ body {
   border-radius: 50%;
   position: absolute;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  animation-name: scroll-rotate;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.52, 0.8, 0.54, 0.26);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  33% {
+    transform: rotate(360deg);
+  }
+
+  66% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .scroll-link:hover,

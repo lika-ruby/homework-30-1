@@ -20,60 +20,63 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header" id="header">
-      <div class="container container-header">
-        <!-- Лого -->
-        <a class="header-logo" href="./index.html"
-          >Web<span class="header-logo-accent">Studio</span></a
-        >
-        <!-- Головна навігація сайту -->
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
+      <div class="container">
+        <div class="container-header" data-aos="fade-down">
+          <!-- Лого -->
+          <a class="header-logo" href="./index.html"
+            >Web<span class="header-logo-accent">Studio</span></a
+          >
+          <!-- Головна навігація сайту -->
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a
+                  class="header-nav-link header-nav-link-checked"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контакти -->
+          <ul class="header-contacts-list">
+            <li class="header-contacts-item">
               <a
-                class="header-nav-link header-nav-link-checked"
-                href="./index.html"
-                >Студія</a
+                class="header-contacts-link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+              >
+                <svg class="header-contacts-icon" width="16" height="12">
+                  <use href="./img/icons.svg#letter"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link" href="#contacts">Контакти</a>
+            <li class="header-contacts-item">
+              <a
+                class="header-contacts-link"
+                href="tel:+380961111111"
+                target="_blank"
+              >
+                <svg class="header-contacts-icon" width="10" height="16">
+                  <use href="./img/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!-- Контакти -->
-        <ul class="header-contacts-list">
-          <li class="header-contacts-item">
-            <a
-              class="header-contacts-link"
-              href="mailto:info@devstudio.com"
-              target="_blank"
-            >
-              <svg class="header-contacts-icon" width="16" height="12">
-                <use href="./img/icons.svg#letter"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts-item">
-            <a
-              class="header-contacts-link"
-              href="tel:+380961111111"
-              target="_blank"
-            >
-              <svg class="header-contacts-icon" width="10" height="16">
-                <use href="./img/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- Головна сторінка -->
@@ -92,7 +95,7 @@
       <section class="advantages">
         <div class="container">
           <ul class="advantages-list">
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-right">
               <div class="advanteges-icon-bg">
                 <svg class="advantages-icon" width="70" height="70">
                   <use href="./img/icons.svg#antenna"></use>
@@ -104,7 +107,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-up">
               <div class="advanteges-icon-bg">
                 <svg class="advantages-icon" width="70" height="70">
                   <use href="./img/icons.svg#clock"></use>
@@ -116,7 +119,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-down">
               <div class="advanteges-icon-bg">
                 <svg class="advantages-icon" width="70" height="70">
                   <use href="./img/icons.svg#diagram"></use>
@@ -127,7 +130,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item" data-aos="fade-left">
               <div class="advanteges-icon-bg">
                 <svg class="advantages-icon" width="70" height="70">
                   <use href="./img/icons.svg#astronaut"></use>
@@ -145,9 +148,9 @@
       <!-- Секція: Чим ми займаємося -->
       <section class="doing">
         <div class="container">
-          <h2 class="doing-title">Чим ми займаємося</h2>
+          <h2 class="doing-title" data-aos="zoom-in-up">Чим ми займаємося</h2>
           <ul class="doing-list">
-            <li class="doing-item">
+            <li data-aos="zoom-in-down">
               <a href="#" class="doing-link">
                 <img
                   class="doing-photo"
@@ -159,7 +162,7 @@
                 </div>
               </a>
             </li>
-            <li class="doing-item">
+            <li data-aos="zoom-in-up">
               <a href="#" class="doing-link">
                 <img
                   class="doing-photo"
@@ -171,7 +174,7 @@
                 </div>
               </a>
             </li>
-            <li class="doing-item">
+            <li data-aos="zoom-in-down">
               <a href="#" class="doing-link">
                 <img
                   class="doing-photo"
@@ -189,10 +192,10 @@
       <!-- Секція: Наша команда -->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title" data-aos="zoom-in-up">Наша команда</h2>
           <ul class="team-list">
             <!-- Перша людина -->
-            <li class="team-item">
+            <li class="team-item" data-aos="fade-up-right">
               <img
                 class="team-photo"
                 width="270"
@@ -249,7 +252,7 @@
               </ul>
             </li>
             <!-- Друга людина -->
-            <li class="team-item">
+            <li class="team-item" data-aos="fade-up">
               <img
                 class="team-photo"
                 width="270"
@@ -306,7 +309,7 @@
               </ul>
             </li>
             <!-- Третя людина -->
-            <li class="team-item">
+            <li class="team-item" data-aos="fade-up">
               <img
                 class="team-photo"
                 width="270"
@@ -363,7 +366,7 @@
               </ul>
             </li>
             <!-- Четверта людина -->
-            <li class="team-item">
+            <li class="team-item" data-aos="fade-up-left">
               <img
                 class="team-photo"
                 width="270"
@@ -425,44 +428,44 @@
       <!-- Секція: Клієнти -->
       <section class="clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
+          <h2 class="clients-title" data-aos="zoom-in-up">Постійні клієнти</h2>
           <ul class="clients-list">
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-right">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-YACO-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-right">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-tagline-here-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-right">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-company-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-left">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-foster-peters-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-left">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-brand-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="zoom-in-left">
               <a href="#" target="_blank" class="client-link">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#logo-tag-line-6"></use>
@@ -477,7 +480,7 @@
     <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer-container">
-          <div class="address-container">
+          <div class="address-container" data-aos="fade-up-right">
             <a class="footer-logo" href="#header"
               >Web<span class="footer-logo-accent">Studio</span></a
             >
@@ -510,7 +513,7 @@
               </ul>
             </address>
           </div>
-          <div class="footer-icons-container">
+          <div class="footer-icons-container" data-aos="fade-up">
             <h2 class="footer-title">приєднуйтесь</h2>
             <ul class="footer-icons-list">
               <li class="footer-icon-item">
@@ -559,7 +562,7 @@
               </li>
             </ul>
           </div>
-          <form action="" class="footer-form">
+          <form action="" class="footer-form" data-aos="fade-up-left">
             <h2 class="footer-form-title">Підпишіться на розсилку</h2>
             <div class="footer-form-container">
               <input
@@ -652,6 +655,10 @@
         </svg>
       </a>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
